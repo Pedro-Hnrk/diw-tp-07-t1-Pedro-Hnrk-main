@@ -1,0 +1,68 @@
+{
+  "filmes": [
+    {
+      "id": "1",
+      "titulo": "Halloween",
+      "imagem": "images/OIP.png",
+      "descricao": "Laurie Strode se vê sendo perseguida por Michael Myers, um assassino psicopata que escapou do sanatório onde estava preso.",
+      "trailer": "https://www.youtube.com/watch?v=oVgtguYmNBg",
+      "genero": "Terror"
+    },
+    {
+      "id": "2",
+      "titulo": "Pânico",
+      "imagem": "images/panico.jpg",
+      "descricao": "Um assassino mascarado começa a perseguir e matar jovens em uma cidade pequena.",
+      "trailer": "https://www.youtube.com/watch?v=WCzzUe_aOvw",
+      "genero": "Terror"
+    },
+    {
+      "id": "3",
+      "titulo": "O Acampamento",
+      "imagem": "images/f1ex.png",
+      "descricao": "Um grupo de jovens vão para um acampamento isolado na floresta, onde começam a acontecer eventos estranhos e misteriosos.",
+      "trailer": "https://www.youtube.com/watch?v=5-_wIaTtsLM",
+      "genero": "Suspense"
+    },
+    {
+      "id": "4",
+      "titulo": "A Freira",
+      "imagem": "images/a-freira-poster-teaser.png",
+      "descricao": "Uma jovem freira se suicida em um convento na Romênia, e um padre e uma noviça são enviados para investigar o mistério.",
+      "trailer": "https://www.youtube.com/watch?v=Tc-r3h6jdNI",
+      "genero": "Terror"
+    },
+    {
+      "id": "5",
+      "titulo": "SchindlersList",
+      "imagem": "images/f3ex.webp",
+      "descricao": "Oskar Schindler salva milhares de judeus durante o Holocausto.",
+      "trailer": "https://www.youtube.com/watch?v=gG22XNhtnoY",
+      "genero": "Drama"
+    },
+    {
+      "id": "6",
+      "titulo": "As Vantagens de ser invisível",
+      "imagem": "images/asVant.webp",
+      "descricao": "A jornada emocional de um adolescente tímido na escola.",
+      "trailer": "https://www.youtube.com/watch?v=qhROvhrY1Xg",
+      "genero": "Drama"
+    },
+    {
+      "id": "c7e2",
+      "titulo": "Premonição 6",
+      "imagem": "https://images.justwatch.com/poster/306400753/s718/temporada-1.%7Bformat%7D",
+      "descricao": "Bom filme de terror",
+      "trailer": "https://www.youtube.com/watch?v=wz_fRuuy37o",
+      "genero": "Terror"
+    },
+    {
+      "id": "15cb",
+      "titulo": "Sorria",
+      "imagem": "https://midias.correiobraziliense.com.br/_midias/jpg/2022/08/19/paramount_pictures_filme_sorria-26265799.jpg",
+      "descricao": "teste",
+      "trailer": "teste",
+      "genero": "Terror"
+    }
+  ]
+}

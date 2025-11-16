@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#search {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.destaques {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.filme-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filme-destaque img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info button {
+    margin-top: 10px;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lista-filmes {
+    padding: 20px;
+}
+
+.grid-filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.filme img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.filme button {
+    padding: 8px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+.container { 
+    display: flex;
+    gap: 20px;
+}
+@media(max-width: 770px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+.card-img-top {
+    width: 100%;
+    height: 350px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    background-color: #fff; 
+}
+
+.botoes-detalhes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.botoes-detalhes a, .botoes-detalhes button {
+    text-decoration: none;
+}
+
+.container-detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    margin-top: 2rem;
+  }
+  .container-detalhes img {
+    max-height: 500px; 
+    width: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .container-detalhes .descricao {
+    max-width: 500px;
+  }
+  

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gráfico de Gêneros</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    canvas {
+      max-width: 500px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Distribuição de Filmes por Gênero</h1>
+  <canvas id="graficoGenero"></canvas>
+
+  <script>
+    async function carregarDados() {
+      const resposta = await fetch("http://localhost:3000/filmes");
+      const filmes = await resposta.json();
+
+      const contagem = {};
+
+      filmes.forEach(filme => {
+        contagem[filme.genero] = (contagem[filme.genero] || 0) + 1;
+      });
+
+      const generos = Object.keys(contagem);
+      const quantidades = Object.values(contagem);
+
+      const ctx = document.getElementById("graficoGenero").getContext("2d");
+
+      new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: generos,
+          datasets: [{
+            label: 'Quantidade por Gênero',
+            data: quantidades,
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)'
+            ]
+          }]
+        },
+        options: {
+          responsive: true
+        }
+      });
+    }
+    carregarDados();
+  </script>
+</body>
+</html>
